@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>랜덤 고양이</title>
+  </head>
+  <body>
+    <h1>랜덤 고양이</h1>
+
+    <button onclick="cat()">고양이 바꾸기</button>
+    <br /><br />
+
+    <img id="catImg" width="300" />
+
+    <script>
+      function cat() {
+        const img = document.getElementById("catImg");
+        img.src = "https://cataas.com/cat?" + new Date().getTime();
+      }
+      cat();
+    </script>
+  </body>
+</html>
